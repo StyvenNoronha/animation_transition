@@ -1,0 +1,47 @@
+body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.vermelho{
+  background-color: red;
+  transition-property: background-color,width,height;
+  transition-duration: 3s;
+
+
+}
+
+.vermelho:hover{
+  background-color: yellow;
+  transition-property: background-color,width,height;
+  transition-duration: 2s;
+  width: 200px;
+  height: 200px;
+}
+
+.azul{
+  background-color: blue;
+}
+
+.azul:hover{
+  transition: all 1s  cubic-bezier( .29, 1.01, 1, -0.68);
+  width:300px;
+  height: 300px;
+}
+
+.verde{
+  background-color: green;
+}
+
+.verde:hover{
+  transition-duration: 1.5s;
+  opacity: 0;
+}
